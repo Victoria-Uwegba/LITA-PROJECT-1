@@ -32,7 +32,8 @@ Sales Data: The primary dataset used for this analysis is the "sales_data.csv" f
 ### Data Preparation
 In this phase of data preparation, I performed the following actions:
 1. Data Loading and Inspection
-2. Completing the table
+2. Removing of duplicates
+3. Creating new entries from an existing column
 
 ### Exploratory Data Analysis
 EDA involved exploring the sales data to answer key questions, such as:
@@ -57,4 +58,9 @@ EDA involved exploring the sales data to answer key questions, such as:
   ```SQL
   select * from Table 1
   ```
+
+### Data Visualization:
+
+The data was queried using SQL Server Management Studio and then imported into Microsoft Power BI to build a dashboard, providing Superstores with valuable insights into their business performance.
+
 ### Recommendation
