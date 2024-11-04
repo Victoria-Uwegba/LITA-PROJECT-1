@@ -37,6 +37,7 @@ In this phase of data preparation, I performed the following actions:
 
 
 
+
 ### Exploratory Data Analysis
 EDA involved exploring the sales data to answer key questions, such as:
 - retrieve the total sales for each product category.
