@@ -35,6 +35,8 @@ In this phase of data preparation, I performed the following actions:
 2. Removing of duplicates
 3. Creating new entries from an existing column
 
+
+
 ### Exploratory Data Analysis
 EDA involved exploring the sales data to answer key questions, such as:
 - retrieve the total sales for each product category.
