@@ -35,6 +35,7 @@ In this phase of data preparation, I performed the following actions:
 2. Removing of duplicates
 3. Creating new entries from an existing column
 
+![image](https://github.com/user-attachments/assets/2b969c83-3a63-43a2-a39e-84f26987ac78)
 
 
 
