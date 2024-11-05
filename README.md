@@ -59,7 +59,7 @@ EDA involved exploring the sales data to answer key questions, such as:
 
   ### Data Analysis
 
-  For the rest of the code, check the [sqlquery](FROM [dbo]. file
+  For the rest of the code, check the [sqlquery](https://github.com/Victoria-Uwegba/LITA_SALES_ANALYSIS/blob/main/SQLQuery%20Sales%20Analysis.sql). file
 
   ```SQL
   SELECT * FROM [dbo].[LITA sales analysis ]
