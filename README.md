@@ -12,7 +12,7 @@
 
 ### Project Overview
 
-This data analysis project focuses on delivering insights into a retail store's sales performance for the years 2023 and 2024. Through a detailed examination of the sales data, the project aims to uncover trends, highlight top-selling products, assess regional performance, and analyze monthly sales patterns. The insights gained will support data-driven recommendations and comprehensively understand the company’s overall performance.
+This data analysis project focuses on delivering insights into a retail store's sales performance for 2023 and 2024. Through a detailed examination of the sales data, the project aims to uncover trends, highlight top-selling products, assess regional performance, and analyze monthly sales patterns. The insights gained will support data-driven recommendations and comprehensively understand the company’s performance.
 
 ### Data Sources
 
@@ -59,9 +59,15 @@ EDA involved exploring the sales data to answer key questions, such as:
 
   ### Data Analysis
 
+  For the rest of the code, check the [sqlquery](FROM [dbo]. file
+
   ```SQL
-  select * from Table 1
-  ```
+  SELECT * FROM [dbo].[LITA sales analysis ]
+  
+  SELECT Product, SUM(Total_Sales) AS TotalSales
+  FROM [dbo].[LITA sales analysis ]
+  GROUP BY Product;
+```
 
 ### Data Visualization:
 
