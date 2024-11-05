@@ -1,4 +1,4 @@
-# LITA_SALES_ANALYSIS
+# SALES ANALYSIS
 ---
 ### Table of Content
 ---
@@ -18,8 +18,22 @@ This data analysis project focuses on delivering insights into a retail store's 
 
 Sales Data: The primary dataset used for this analysis is the "sales_data.csv" file, containing detailed information about each product the company sells provided by LITA
 
+### Data Collected
+
+1. Region: The geographical area where the retail store is located.
+   
+2. Customer ID: The identification numbers of customers who purchased a product.
+
+3. Product type: The types of product sold (e.g Shirts, Shoes, Hats, etc)
+
+4. Order date: The date a particular product was ordered.
+
+5. Quantity: The number of units of product purchased per customer.
+
+6. Unit Price: How much a unit of each product is sold.
+   
 ### Tools Used
-- Microsoft Excel for Data cleaning and data analysis [Download Here](https://www.microsoft.com)
+- Microsoft Excel: The data was analyzed using Microsoft Excel, utilizing Pivot Tables to organize, summarize, and filter the data for easier interpretation. [Download Here](https://www.microsoft.com)
   
 - SQL- Structured Query language for querying data[Download Here](https://learn.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms?view=sql-server-ver16)
   
@@ -30,10 +44,14 @@ Sales Data: The primary dataset used for this analysis is the "sales_data.csv" f
 - Github for portfolio building
 
 ### Data Preparation
-In this phase of data preparation, I performed the following actions:
+In this phase of data preparation, the following actions were performed:
+
 1. Data Loading and Inspection
 2. Removing of duplicates
 3. Creating new entries from an existing column
+
+   ``` 
+   
 
 ![image](https://github.com/user-attachments/assets/2b969c83-3a63-43a2-a39e-84f26987ac78)
 
@@ -67,7 +85,7 @@ EDA involved exploring the sales data to answer key questions, such as:
   SELECT Product, SUM(Total_Sales) AS TotalSales
   FROM [dbo].[LITA sales analysis ]
   GROUP BY Product;
-```
+
 
 ### Data Visualization:
 
