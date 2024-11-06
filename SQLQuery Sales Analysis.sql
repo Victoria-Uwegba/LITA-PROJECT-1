@@ -25,14 +25,14 @@ ORDER BY TotalRevenue DESC
 
 ---calculate monthly sales totals for the current year.----
 SELECT 
-    MONTH(OrderDate) AS month,
-    SUM(Total_Sales) AS total_sales
-FROM 
+    MONTH(Order_Date) AS month,
+	SUM(Total_Sales) AS total_sales
+    FROM 
     [dbo].[LITA sales analysis ]
 WHERE 
-orderdate between 01/01/2014 AND 31/12/2024
+Order_Date between '2024-01-01' AND '2024-12-31'
 GROUP BY 
-    MONTH(OrderDate)
+    Order_Date
 ORDER BY 
     month;
 
@@ -51,7 +51,7 @@ ORDER BY
 	SELECT 
     region,
     SUM(Total_Sales) AS totalsales,
-    ROUND((SUM(Total_Sales) * 100.0 / (SELECT SUM(Total_Sales) FROM [dbo].[LITA sales analysis ] )), 2) AS percentage_of_total_sales
+    ROUND((SUM(Total_Sales) * 100 / (SELECT SUM(Total_Sales) FROM [dbo].[LITA sales analysis ] )), 2) AS percentage_of_total_sales
 FROM 
     [dbo].[LITA sales analysis ]
 GROUP BY 
@@ -60,3 +60,6 @@ ORDER BY
     totalsales DESC;
 
 	---identify products with no sales in the last quarter.---
+SELECT DISTINCT Product
+FROM [dbo].[LITA sales analysis ]
+WHERE Order_Date between '2024-07-01' and '2024-08-31' 
